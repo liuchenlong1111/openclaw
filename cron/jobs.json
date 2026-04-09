@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "c90cfb67-9d24-4c63-96b9-f5c1766de045",
+      "name": "每日辛苦提醒",
+      "description": "龙龙仔每天凌晨2:25发送暖心提醒",
+      "enabled": true,
+      "createdAtMs": 1773771690298,
+      "updatedAtMs": 1775700017385,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "工作辛苦了！记得早点休息 💤\n\n@刘成龙 @逄格娟"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "dingtalk-connector",
+        "to": "cidUNAfzlz+0GntERJWlrGXIw=="
+      },
+      "state": {
+        "nextRunAtMs": 1775786400000,
+        "lastRunAtMs": 1775700000006,
+        "lastStatus": "ok",
+        "lastDurationMs": 17379,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered"
+      }
+    },
+    {
+      "id": "3e7bc1a2-79b7-4fb6-9f2d-9942e83f2226",
+      "agentId": "main",
+      "sessionKey": "agent:main:openai-user:{\"channel\":\"dingtalk-connector\",\"accountid\":\"__default__\",\"chattype\":\"direct\",\"peerid\":\"18963337352\",\"sendername\":\"心远\"}",
+      "name": "中午热饭提醒",
+      "enabled": true,
+      "createdAtMs": 1774582698588,
+      "updatedAtMs": 1775706072808,
+      "schedule": {
+        "kind": "cron",
+        "expr": "41 11 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "发送钉钉群消息提醒：🍚 该热饭啦！@18963337352 @694061241169592 忙碌了一上午，记得好好吃饭！"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "dingtalk-connector",
+        "to": "group:cidUNAfzlz+0GntERJWlrGXIw=="
+      },
+      "state": {
+        "nextRunAtMs": 1775792460000,
+        "lastRunAtMs": 1775706060006,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 12802,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "8a61b2b3-b2d9-4b1d-9df7-40179c78f788",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "OpenClaw每日资讯推送",
+      "enabled": true,
+      "createdAtMs": 1774879825497,
+      "updatedAtMs": 1775694667042,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 8 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "🔔 每日定时任务：检查并执行 OpenClaw 每日资讯推送任务\n\n请执行以下步骤：\n1. 检查 /Users/liuchenglong/.openclaw/workspace/tasks/ 目录下是否有今天的 pending 任务 openclaw_daily_YYYYMMDD.json\n2. 如果有任务，按照任务 instructions 和 steps 执行：搜索 OpenClaw 最新资讯，生成微信公众号文章，保存到 wechat_articles/ 目录\n3. 完成后将文章发送到钉钉群 cidUNAfzlz+0GntERJWlrGXIw==\n4. 更新任务状态为 completed"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1775781000000,
+        "lastRunAtMs": 1775694600007,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 67035,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 0
+      }
+    }
+  ]
+}

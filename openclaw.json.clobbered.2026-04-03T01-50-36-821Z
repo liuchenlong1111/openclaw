@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.28",
+    "lastTouchedAt": "2026-04-03T01:50:36.266Z"
+  },
+  "logging": {
+    "level": "info"
+  },
+  "models": {
+    "providers": {
+      "custom-ark-cn-beijing-volces-com": {
+        "baseUrl": "https://ark.cn-beijing.volces.com/api/coding",
+        "apiKey": "cca86b4a-7106-4336-8a7a-7c3ea7d83400",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "ark-code-latest",
+            "name": "ark-code-latest (Custom Provider)",
+            "api": "anthropic-messages",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 16000,
+            "maxTokens": 4096
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "custom-ark-cn-beijing-volces-com/ark-code-latest"
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "default": true,
+        "name": "Main Agent",
+        "model": "custom-ark-cn-beijing-volces-com/ark-code-latest",
+        "subagents": {
+          "allowAgents": [
+            "*"
+          ]
+        }
+      },
+      {
+        "id": "whisper-transcribe-oss",
+        "name": "Whisper 转录 + OSS 上传",
+        "workspace": "/Users/liuchenglong/.openclaw/workspace/agents/whisper-transcribe-oss",
+        "agentDir": "/Users/liuchenglong/.openclaw/agents/whisper-transcribe-oss/agent",
+        "model": "custom-ark-cn-beijing-volces-com/ark-code-latest"
+      }
+    ]
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "channels": {
+    "dingtalk-connector": {
+      "enabled": true,
+      "clientId": "dingwoqloe9c84jjgmcr",
+      "clientSecret": "3uA7KYwPpMMp6MFsstGbdjlXQTK0xopTr9ODSBsTqIWXGf8Iirlki6lh3ddG724c"
+    }
+  },
+  "gateway": {
+    "port": 8080,
+    "mode": "local",
+    "bind": "lan",
+    "auth": {
+      "mode": "token",
+      "token": "ctkn_792604c8d4a7d17af64465c74c0c4eaa"
+    },
+    "remote": {
+      "url": "wss://gateway.openclaw.ai/"
+    }
+  },
+  "skills": {
+    "entries": {
+      "video-frames": {
+        "enabled": true
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "dingtalk-connector": {
+        "enabled": true,
+        "config": {
+          "enabled": true
+        }
+      }
+    }
+  }
+}

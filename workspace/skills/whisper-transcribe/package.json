@@ -1,0 +1,13 @@
+{
+  "name": "whisper-transcribe",
+  "version": "1.0.0",
+  "description": "Use OpenAI Whisper to transcribe audio/video to text with timestamps",
+  "author": "user",
+  "license": "MIT",
+  "keywords": ["whisper", "transcribe", "audio", "video", "subtitles", "speech-to-text"],
+  "entrypoint": null,
+  "dependencies": {
+    "openai-whisper": "*",
+    "ffmpeg": "*"
+  }
+}

@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>OpenClaw</Author>
+  <LastAuthor>OpenClaw</LastAuthor>
+  <Created>2026-03-21T12:45:00Z</Created>
+  <LastSaved>2026-03-21T12:45:00Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8910</WindowHeight>
+  <WindowWidth>14805</WindowWidth>
+  <WindowTopX>240</WindowTopX>
+  <WindowTopY>105</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="Header">
+   <Alignment ss:Vertical="Bottom" ss:Horizontal="Center"/>
+   <Borders/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" ss:Size="12" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#4472C4" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="热门电影Top10">
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="11" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="18">
+   <Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="150"/>
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="180"/>
+   <Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="100"/>
+   <Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="100"/>
+   <Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="100"/>
+   <Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="200"/>
+   <Row ss:Height="24">
+    <Cell ss:StyleID="Header"><Data ss:Type="String">电影名称</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">又名</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">评分</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">评价人数</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">上映时间</Data></Cell>
+    <Cell ss:StyleID="Header"><Data ss:Type="String">导演/主演</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">你行！你上！</Data></Cell>
+    <Cell><Data ss:Type="String">英雄出少年 / 你行你上</Data></Cell>
+    <Cell><Data ss:Type="Number">6.7</Data></Cell>
+    <Cell><Data ss:Type="Number">126169</Data></Cell>
+    <Cell><Data ss:Type="String">2025-07-18</Data></Cell>
+    <Cell><Data ss:Type="String">姜文 / 姜文, 马丽</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">用武之地</Data></Cell>
+    <Cell><Data ss:Type="String">Escape From The Outland</Data></Cell>
+    <Cell><Data ss:Type="Number">7.2</Data></Cell>
+    <Cell><Data ss:Type="Number">78702</Data></Cell>
+    <Cell><Data ss:Type="String">2025-12-31</Data></Cell>
+    <Cell><Data ss:Type="String">申奥 / 肖央, 齐溪, 任达华</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">家弑服务</Data></Cell>
+    <Cell><Data ss:Type="String">女佣 / 女仆</Data></Cell>
+    <Cell><Data ss:Type="Number">7.1</Data></Cell>
+    <Cell><Data ss:Type="Number">62279</Data></Cell>
+    <Cell><Data ss:Type="String">2025-12-19</Data></Cell>
+    <Cell><Data ss:Type="String">保罗·费格 / 西德尼·斯维尼, 阿曼达·塞弗里德</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">哈姆奈特</Data></Cell>
+    <Cell><Data ss:Type="String">哈姆尼特(港)</Data></Cell>
+    <Cell><Data ss:Type="Number">7.8</Data></Cell>
+    <Cell><Data ss:Type="Number">42792</Data></Cell>
+    <Cell><Data ss:Type="String">2025-12-12</Data></Cell>
+    <Cell><Data ss:Type="String">/ 杰西·巴克利, 保罗·麦斯卡</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">至尊马蒂</Data></Cell>
+    <Cell><Data ss:Type="String">横冲直闯(台) / Marty Supreme</Data></Cell>
+    <Cell><Data ss:Type="Number">7.3</Data></Cell>
+    <Cell><Data ss:Type="Number">24863</Data></Cell>
+    <Cell><Data ss:Type="String">2026-03-20</Data></Cell>
+    <Cell><Data ss:Type="String">阿贝尔·费拉拉 / 提莫西·查拉梅, 格温妮斯·帕特洛</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">东京出租车</Data></Cell>
+    <Cell><Data ss:Type="String">东京的士：回忆里程(港)</Data></Cell>
+    <Cell><Data ss:Type="Number">7.9</Data></Cell>
+    <Cell><Data ss:Type="Number">11490</Data></Cell>
+    <Cell><Data ss:Type="String">2025-11-21</Data></Cell>
+    <Cell><Data ss:Type="String">山田洋次 / 倍赏千惠子, 木村拓哉, 苍井优</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">侵略机器</Data></Cell>
+    <Cell><Data ss:Type="String">战争机器</Data></Cell>
+    <Cell><Data ss:Type="Number">6.4</Data></Cell>
+    <Cell><Data ss:Type="Number">9038</Data></Cell>
+    <Cell><Data ss:Type="String">2026-03-06</Data></Cell>
+    <Cell><Data ss:Type="String">帕特里克·休斯 / 阿兰·里奇森, 丹尼斯·奎德</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">无尽的月</Data></Cell>
+    <Cell><Data ss:Type="String">无尽之月 / 满月</Data></Cell>
+    <Cell><Data ss:Type="Number">7.4</Data></Cell>
+    <Cell><Data ss:Type="Number">7983</Data></Cell>
+    <Cell><Data ss:Type="String">2025-10-18</Data></Cell>
+    <Cell><Data ss:Type="String">伊西德罗·麦卡锡 / 佩内洛普·克鲁兹</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">酷未来</Data></Cell>
+    <Cell><Data ss:Type="String">请听我们说未来</Data></Cell>
+    <Cell><Data ss:Type="Number">7.5</Data></Cell>
+    <Cell><Data ss:Type="Number">3752</Data></Cell>
+    <Cell><Data ss:Type="String">2025-09-11</Data></Cell>
+    <Cell><Data ss:Type="String">陈维仁 / 纪录片</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">浪浪山小妖怪</Data></Cell>
+    <Cell><Data ss:Type="String">中国奇谭之浪浪山</Data></Cell>
+    <Cell><Data ss:Type="Number">8.2</Data></Cell>
+    <Cell><Data ss:Type="Number">2831</Data></Cell>
+    <Cell><Data ss:Type="String">2025-12-30</Data></Cell>
+    <Cell><Data ss:Type="String">/ 动画</Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+</Workbook>

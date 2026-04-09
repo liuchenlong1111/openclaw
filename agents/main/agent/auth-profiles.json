@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "profiles": {
+    "moonshot:default": {
+      "type": "api_key",
+      "provider": "moonshot",
+      "key": "sk-8DeaXppRlqsrrD780Jok5AmEYUpmsfp9bglOOKEhOlENEyqV"
+    },
+    "ollama:default": {
+      "type": "api_key",
+      "provider": "ollama",
+      "key": "ollama-local"
+    },
+    "local-gpu:default": {
+      "type": "api_key",
+      "provider": "local-gpu",
+      "key": "local"
+    }
+  },
+  "lastGood": {
+    "moonshot": "moonshot:default",
+    "local-gpu": "local-gpu:default"
+  },
+  "usageStats": {
+    "moonshot:default": {
+      "lastUsed": 1774020934297,
+      "errorCount": 0,
+      "lastFailureAt": 1773843927147
+    },
+    "local-gpu:default": {
+      "errorCount": 0,
+      "lastUsed": 1775656384402,
+      "lastFailureAt": 1775555303401
+    }
+  }
+}
