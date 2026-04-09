@@ -1,4 +1,4 @@
 .env
 workspace/
 logs/
-agents/sessions/
+agents/main/sessions/
