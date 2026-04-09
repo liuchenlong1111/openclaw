@@ -1,16 +1,18 @@
 {
   "agent:main:main": {
-    "sessionId": "b6b76b6e-60e2-4c16-ad80-0bcb63b0477e",
+    "sessionId": "d02c201b-4210-4884-9777-029b5e702dd5",
     "sessionFile": "/Users/liuchenglong/.openclaw/agents/main/sessions/b6b76b6e-60e2-4c16-ad80-0bcb63b0477e.jsonl",
-    "updatedAt": 1775743481599,
+    "updatedAt": 1775745669542,
     "systemSent": true,
     "abortedLastRun": false,
     "providerOverride": "custom-ark-cn-beijing-volces-com",
     "modelOverride": "ark-code-latest",
     "chatType": "direct",
+    "model": "ark-code-latest",
+    "modelProvider": "custom-ark-cn-beijing-volces-com",
     "compactionCount": 0,
     "origin": {
-      "provider": "heartbeat",
+      "provider": "webchat",
       "surface": "webchat",
       "chatType": "direct",
       "label": "heartbeat",
@@ -18,8 +20,7 @@
       "to": "heartbeat"
     },
     "deliveryContext": {
-      "channel": "webchat",
-      "to": "heartbeat"
+      "channel": "webchat"
     },
     "lastChannel": "webchat",
     "skillsSnapshot": {
@@ -573,16 +574,19 @@
       ],
       "version": 0
     },
+    "inputTokens": 15907,
+    "outputTokens": 94,
+    "totalTokens": 20827,
     "totalTokensFresh": true,
     "status": "done",
-    "startedAt": 1775743443456,
-    "modelProvider": "custom-ark-cn-beijing-volces-com",
-    "model": "ark-code-latest",
+    "startedAt": 1775745665332,
+    "endedAt": 1775745669414,
+    "runtimeMs": 4082,
     "contextTokens": 256000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775743443442,
-      "sessionId": "b6b76b6e-60e2-4c16-ad80-0bcb63b0477e",
+      "generatedAt": 1775745665326,
+      "sessionId": "d02c201b-4210-4884-9777-029b5e702dd5",
       "sessionKey": "agent:main:main",
       "provider": "custom-ark-cn-beijing-volces-com",
       "model": "ark-code-latest",
@@ -601,9 +605,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 33284,
+        "chars": 34390,
         "projectContextChars": 12075,
-        "nonProjectContextChars": 21209
+        "nonProjectContextChars": 22315
       },
       "injectedWorkspaceFiles": [
         {
@@ -786,7 +790,7 @@
       },
       "tools": {
         "listChars": 0,
-        "schemaChars": 17260,
+        "schemaChars": 26034,
         "entries": [
           {
             "name": "read",
@@ -808,13 +812,13 @@
           },
           {
             "name": "exec",
-            "summaryChars": 446,
+            "summaryChars": 539,
             "schemaChars": 1098,
             "propertiesCount": 12
           },
           {
             "name": "process",
-            "summaryChars": 322,
+            "summaryChars": 416,
             "schemaChars": 961,
             "propertiesCount": 12
           },
@@ -825,9 +829,21 @@
             "propertiesCount": 18
           },
           {
+            "name": "nodes",
+            "summaryChars": 118,
+            "schemaChars": 1589,
+            "propertiesCount": 32
+          },
+          {
+            "name": "cron",
+            "summaryChars": 3726,
+            "schemaChars": 6700,
+            "propertiesCount": 13
+          },
+          {
             "name": "message",
             "summaryChars": 89,
-            "schemaChars": 5613,
+            "schemaChars": 5601,
             "propertiesCount": 105
           },
           {
@@ -835,6 +851,12 @@
             "summaryChars": 152,
             "schemaChars": 223,
             "propertiesCount": 2
+          },
+          {
+            "name": "gateway",
+            "summaryChars": 494,
+            "schemaChars": 497,
+            "propertiesCount": 12
           },
           {
             "name": "agents_list",
@@ -929,15 +951,9 @@
         ]
       }
     },
-    "inputTokens": 283302,
-    "outputTokens": 117,
-    "cacheRead": 1336,
+    "cacheRead": 4920,
     "cacheWrite": 0,
-    "estimatedCostUsd": 0,
-    "totalTokens": 95032,
-    "lastTo": "heartbeat",
-    "endedAt": 1775743481554,
-    "runtimeMs": 38098
+    "estimatedCostUsd": 0
   },
   "agent:main:cron:c90cfb67-9d24-4c63-96b9-f5c1766de045": {
     "sessionId": "ec643f76-41b0-45d4-8c37-aee30b11998b",

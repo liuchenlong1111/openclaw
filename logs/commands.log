@@ -46,3 +46,4 @@
 {"timestamp":"2026-04-08T15:36:03.270Z","action":"reset","sessionKey":"agent:main:main","senderId":"unknown","source":"gateway:sessions.reset"}
 {"timestamp":"2026-04-08T15:39:42.615Z","action":"new","sessionKey":"agent:main:main","senderId":"openclaw-control-ui","source":"webchat"}
 {"timestamp":"2026-04-08T15:41:10.468Z","action":"reset","sessionKey":"agent:main:main","senderId":"unknown","source":"gateway:sessions.reset"}
+{"timestamp":"2026-04-09T14:40:57.009Z","action":"reset","sessionKey":"agent:main:main","senderId":"unknown","source":"gateway:sessions.reset"}
